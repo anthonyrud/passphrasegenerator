@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GeneratorComponent } from './generator/generator.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
