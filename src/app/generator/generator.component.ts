@@ -8,17 +8,26 @@ import { Component, OnInit } from '@angular/core';
 export class GeneratorComponent implements OnInit {
 
   passphrase: string = '';
+  passphrasenospace: string ='';
 
   words = [
-    "sausage",
-    "dog",
-    "red",
-    "blue",
+    "bread",
+    "zebra",
+    "sheep",
+    "black",
     "green",
     "yellow",
-    "hair",
-    "look",
-    "card"
+    "hairy",
+    "lunch",
+    "dizzy",
+    "brain",
+    "child",
+    "cream",
+    "dream",
+    "phone",
+    "pilot",
+    "train",
+    "voice"
   ]
 
   generate() {
@@ -32,6 +41,8 @@ export class GeneratorComponent implements OnInit {
     result += " " + this.words[(Math.floor(Math.random() * length))];
 
     this.passphrase = result;
+    this.passphrasenospace=result.replace(/ /g,'');
+
   }
 
   constructor() { }
